@@ -1,5 +1,6 @@
 // Typewriter Effect
 function typeWriter(element, text, speed = 50) {
+  if (!element) return;
   let i = 0;
   element.textContent = "";
 
@@ -112,9 +113,12 @@ function initParallax() {
   });
 }
 
-// Smooth Reveal Animation
 function addRevealAnimation() {
+  // Prevent duplicate style tags
+  if (document.getElementById("reveal-animation-style")) return;
+
   const style = document.createElement("style");
+  style.id = "reveal-animation-style";
   style.textContent = `
         .section {
             opacity: 0;
@@ -181,24 +185,28 @@ function createParticles() {
         `;
     particlesContainer.appendChild(particle);
   }
-
-  const style = document.createElement("style");
-  style.textContent = `
-        @keyframes float {
-            0%, 100% {
-                transform: translate(0, 0);
-                opacity: 0;
-            }
-            50% {
-                opacity: 1;
-            }
-            100% {
-                transform: translate(${Math.random() * 100 - 50}px, ${
-    Math.random() * 100 - 50
-  }px);
-            }
-        }
-    `;
+  // Check if the style for particles already exists
+  if (!document.getElementById("particles-float-style")) {
+    const style = document.createElement("style");
+    style.id = "particles-float-style";
+    style.textContent = `
+          @keyframes float {
+              0%, 100% {
+                  transform: translate(0, 0);
+                  opacity: 0;
+              }
+              50% {
+                  opacity: 1;
+              }
+              100% {
+                  transform: translate(${Math.random() * 100 - 50}px, ${
+      Math.random() * 100 - 50
+    }px);
+              }
+          }
+      `;
+    document.head.appendChild(style);
+  }
   document.head.appendChild(style);
 
   hero.insertBefore(particlesContainer, hero.firstChild);

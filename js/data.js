@@ -6,30 +6,30 @@ const skillsData = [
     level: 90,
     description: "Runtime JavaScript para backend",
   },
-  {
-    name: "Python",
-    icon: '<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" style="width: 4rem; height: 4rem;" />',
-    level: 85,
-    description: "Desenvolvimento web e automação",
-  },
-  {
-    name: "Java",
-    icon: '<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" style="width: 4rem; height: 4rem;" />',
-    level: 80,
-    description: "APIs empresariais e microsserviços",
-  },
+  // {
+  //   name: "Python",
+  //   icon: '<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" style="width: 4rem; height: 4rem;" />',
+  //   level: 85,
+  //   description: "Desenvolvimento web e automação",
+  // },
+  // {
+  //   name: "Java",
+  //   icon: '<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" style="width: 4rem; height: 4rem;" />',
+  //   level: 80,
+  //   description: "APIs empresariais e microsserviços",
+  // },
   {
     name: "PostgreSQL",
     icon: '<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" style="width: 4rem; height: 4rem;" />',
     level: 85,
     description: "Banco de dados relacional",
   },
-  {
-    name: "MongoDB",
-    icon: '<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg" style="width: 4rem; height: 4rem;" />',
-    level: 80,
-    description: "Banco de dados NoSQL",
-  },
+  // {
+  //   name: "MongoDB",
+  //   icon: '<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg" style="width: 4rem; height: 4rem;" />',
+  //   level: 80,
+  //   description: "Banco de dados NoSQL",
+  // },
   {
     name: "Redis",
     icon: '<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redis/redis-original.svg" style="width: 4rem; height: 4rem;" />',
@@ -48,12 +48,12 @@ const skillsData = [
     level: 70,
     description: "Orquestração de containers",
   },
-  {
-    name: "GraphQL",
-    icon: '<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/graphql/graphql-plain.svg" style="width: 4rem; height: 4rem;" />',
-    level: 75,
-    description: "API query language",
-  },
+  // {
+  //   name: "GraphQL",
+  //   icon: '<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/graphql/graphql-plain.svg" style="width: 4rem; height: 4rem;" />',
+  //   level: 75,
+  //   description: "API query language",
+  // },
   {
     name: "AWS",
     icon: '<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" style="width: 4rem; height: 4rem;" />',

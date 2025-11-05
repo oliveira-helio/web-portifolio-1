@@ -666,10 +666,20 @@
   .contact-info h3 {
     font-size: 1.8rem;
   }
+
+  .scroll-indicator {
+    left: 10%;
+  }
 }
 
 /* Mobile Médio */
 @media (max-width: 600px) {
+  .hero {
+    /* overflow: visible; */
+    height: fit-content;
+    margin-bottom: 50px;
+  }
+
   .hero-text h1 {
     font-size: 2rem;
   }
@@ -699,6 +709,7 @@
 
   .code-window {
     font-size: 0.8rem;
+    margin-bottom: 40px;
   }
 
   .code-content {
